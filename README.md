@@ -6,8 +6,8 @@
 # Criar uma instância do CNPJ
 
 * CNPJ completo com ou sem máscara
-cnpj = CNPJ("12.ABC.345/01DE-35")
-cnpj = CNPJ("12ABC34501DE35")
+cnpj = CNPJ("12.ABC.345/01DE-35") /n
+cnpj = CNPJ("12ABC34501DE35") /n
 cnpj = CNPJ("00.000.000/0001-91")
 cnpj = CNPJ("000000000001")
 

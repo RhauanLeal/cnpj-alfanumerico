@@ -5,23 +5,25 @@
 
 # Criar uma instância do CNPJ
 
+* CNPJ completo com ou sem máscara
 cnpj = CNPJ("12.ABC.345/01DE-35")
 cnpj = CNPJ("12ABC34501DE35")
 cnpj = CNPJ("00.000.000/0001-91")
 cnpj = CNPJ("000000000001")
-cnpj_sem_dv = CNPJ("12.ABC.345/01DE")
 
+* CNPJ sem Dígito Verificador
+cnpj_sem_dv = CNPJ("12.ABC.345/01DE")
 cnpj_sem_dv = CNPJ("12ABC34501DE")
 cnpj_sem_dv = CNPJ("00.000.000/0001")
 cnpj_sem_dv = CNPJ("000000000001")
 
 # Validar o CNPJ
-print("Validação:", cnpj.valida())  # Retorna True ou False
+* print("Validação:", cnpj.valida())  # Retorna True ou False
 
 # Gerar DV para um CNPJ sem dígitos verificadores
-print("Gerar DV:", cnpj_sem_dv.gera_dv())
+* print("Gerar DV:", cnpj_sem_dv.gera_dv())
 
-ou pode utilizar o terminal
+## ou pode utilizar o terminal
 
 ### Exemplo de execução do gerador de dígito verificador
 python.exe cnpjauth.py -dv 12ABC34501DE35 # Teremos como resposta o dígito verificador: 35
